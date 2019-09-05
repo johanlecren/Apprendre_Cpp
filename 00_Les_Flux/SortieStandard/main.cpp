@@ -20,17 +20,17 @@ int main()
         int nbArgent;
         int nbBronze;
 
-        cout << "+" << "--------------------+-----+-----+-----" << right << "+" << endl;
+        cout << "+" << setfill('-') << setw(48) << "+" << setfill(' ') << endl;
         do
         {
             leFichier >> pays >>nbOr >> nbArgent >> nbBronze;
             if(leFichier.good())
             {
-                cout << "|" << setw(20) << left << pays << "|" << setw(5) << right << nbOr << "|" << setw(5) << right << nbArgent << "|" << setw(5) << right << nbBronze << "|" << endl;
-                cout << "+" << "--------------------+-----+-----+-----" << right << "+" << endl;
+                cout << "|" << setw(20) << left << pays << "|" << setw(8) << right << nbOr << "|" << setw(8) << right << nbArgent << "|"  << setw(8) << right << nbBronze << "|" << endl ;
+
             }
         }while(!leFichier.eof());
-
+        cout << "+" << setfill('-') << setw(48) << "+" << setfill(' ') << endl;
     }
     return 0;
 }
