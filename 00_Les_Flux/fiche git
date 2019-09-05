@@ -1,0 +1,10 @@
+git inti ---> creation du depot .git
+git add NomDuFichier ---> ajouter le ou les fichiers à l'index
+git rm -f NomDuFichier ---> retire le ficher de l'index
+git commit -a -m"MonMessage" ---> sauvegarde les fichiers indéxés sur le machine locale
+git status ---> affiche le ou les fichiers suivis (en vert) et non suivis (en rouge)
+git push -u origin master ---> monte la sauvegarde sur github
+git pull ---> descend la sauvegarde de github sur la machine locale
+git clone ---> descend la sauvegarde avec création du dépot sur la machine locale (pour une nouvelle machine)
+
+
